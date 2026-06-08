@@ -151,36 +151,49 @@ face_watchlist_system/
 │   ├── main.py
 │   └── streamlit_app.py
 ├── README.md
+```
 
-
-OPTION 1 — Run Backend Pipeline (No UI)
+### OPTION 1 — Run Backend Pipeline (No UI)
 Step 1 — Clone repository
+```
 git clone https://github.com/y-prog/face_watchlist_system.git
 cd face_watchlist_system
+```
 Step 2 — Create virtual environment
-python3 -m venv .venv
+
+```python3 -m venv .venv
 source .venv/bin/activate
+```
 Step 3 — Install dependencies
+```
 pip install -r requirements.txt
+```
 
 If requirements.txt is missing:
 
+```
 pip install streamlit opencv-python insightface numpy pandas pillow onnxruntime
+```
 Step 4 — Run pipeline
-python src/main.py
 
+```
+python src/main.py
+```
 📌 Outputs:
 
 Annotated frames → output/saved_frames/
 JSON metadata → output/json_files/
-🖥️ OPTION 2 — Run Streamlit App (Interactive UI)
+
+## OPTION 2 — Run Streamlit App (Interactive UI)
 Step 1 — Start Streamlit
+```
 streamlit run src/streamlit_app.py
+```
 Step 2 — Use the app
-Upload MP4 video
-Upload known face images (VIP dataset)
-Set frame interval + similarity threshold
-Click Start Processing
+-Upload MP4 video
+1Upload known face images (VIP dataset)
+-Set frame interval + similarity threshold
+-Click Start Processing
 Explore:
 📊 detection table
 🧑 identity filtering
@@ -189,6 +202,7 @@ Explore:
 🎚 speed control
 📏 frame size control
 🧠 SYSTEM NOTES
+
 Recommended OS: Linux / WSL
 Model: InsightFace (buffalo_l)
 Runs on CPU (GPU optional)
