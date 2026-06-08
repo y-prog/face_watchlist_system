@@ -1,3 +1,7 @@
+# 🎬 Demo
+
+![Demo](assets/gif.gif)
+
 # 🚀 Face Watchlist System
 
 A modular face recognition and tracking pipeline that processes video input, detects and identifies faces using deep learning embeddings, and generates structured visual and analytical outputs.
